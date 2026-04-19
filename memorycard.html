@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Game</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <h1>Memory Game</h1>
+
+  <div class="controls">
+    <label for="pair-count">Paare:</label>
+    <select id="pair-count">
+      <option value="4">4</option>
+      <option value="6" selected>6</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="game-mode">Modus:</label>
+    <select id="game-mode">
+      <option value="single" selected>Einzelspieler</option>
+      <option value="multi">Mehrspieler</option>
+    </select>
+
+    <label for="player1-name">Spieler 1:</label>
+    <input id="player1-name" type="text" value="Spieler 1">
+
+    <label for="player2-name">Spieler 2:</label>
+    <input id="player2-name" type="text" value="Spieler 2">
+
+    <button id="start-btn">Spiel starten</button>
+    <button id="reset-btn">Reset</button>
+  </div>
+
+  <div class="stats">
+    <p>Züge: <span id="moves">0</span></p>
+    <p>Zeit: <span id="time">0</span></p>
+  </div>
+
+  <div id="scoreboard"></div>
+  <p id="message"></p>
+
+  <div id="game-board"></div>
+
+  <script type="module" src="./dist/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
